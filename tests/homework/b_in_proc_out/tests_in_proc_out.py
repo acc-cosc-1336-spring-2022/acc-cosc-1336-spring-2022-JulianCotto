@@ -26,6 +26,6 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(100, multiply_numbers(10, 10))
 
     def test_multiply_numbers_3(self):
-        self.assertEqual(35, multiply_numbers(6, 6))
+        self.assertEqual(36, multiply_numbers(6, 6))
 
 
