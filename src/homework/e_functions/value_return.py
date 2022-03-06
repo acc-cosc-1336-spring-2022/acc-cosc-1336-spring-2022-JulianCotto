@@ -28,6 +28,23 @@ def time_from_utc(utc_offset, utc_zero):
     sum = utc_offset + utc_zero
     return sum % 24
 
+def hour():
+    hour = int(input("Please input the current hour"))
+    return hour 
+
+def minute():
+    minute = int(input("Please input the current minutes"))
+    return minute
+
+def second():
+    seconds = int(input("Please input the current seconds"))
+    return seconds
+
+def time_type():
+    time_type = int(input("Please input the current time type - 12/24?"))
+    return time_type
+
+
 
 
 
