@@ -27,6 +27,7 @@ def main():
         quit()
 
 
+
 def decision_1():
     ham1 = input("Please enter 1st DNA Sequence")
     ham2 = input("Please enter 2nd DNA Sequence")
