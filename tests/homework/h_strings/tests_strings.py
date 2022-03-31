@@ -10,8 +10,10 @@ class Test_Config(unittest.TestCase):
         self.assertEqual(7, get_hamming_distance("GAGCCTACTAACGGGAT" , "CATCGTAATGACGGCCT"))
         self.assertEqual(1, get_hamming_distance("ACGTA" , "ACGTC"))
         self.assertEqual(3, get_hamming_distance("TCGTA" , "TAGAC"))
+        self.assertEqual(8, get_hamming_distance("GAGCCTACTAACGGGATCG" , "CATCGTAATGACGGCCTCC"))
 
     def test_get_dna_complement(self):
         self.assertEqual("ACCGGGTTTT", get_dna_complement("AAAACCCGGT"))
+        self.assertEqual("AACCGGGTTTT", get_dna_complement("AAAACCCGGTT"))
         self.assertEqual("CCTTGGAA", get_dna_complement("TTCCAAGG"))
         self.assertEqual("ACGT", get_dna_complement("ACGT"))

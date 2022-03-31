@@ -38,7 +38,7 @@ def decision_1():
         main()
     while new_decision == "Y":
         decision_1()
-        new_decision = str(input("Do you have another DNA sequence to add? Y/N"))
+        new_decision = str(input("Do you have another DNA sequence to compare? Y/N"))
         while new_decision == "N":
                 main()
         
