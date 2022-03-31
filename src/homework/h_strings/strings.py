@@ -36,10 +36,7 @@ def get_dna_complement(dna):
         elif new_reverse[i] == "C":
             new_reverse[i] = "G"
             i += 1
-
-    
     new_reverse1 = listToString(new_reverse)
-    
     return new_reverse1
     
     
