@@ -1,16 +1,16 @@
-def get_hamming_distance(dna1 , dna2):
-    list_dna1 = list(dna1)
-    list_dna2 = list(dna2)
-    counter = 0
-    for i in range(len(list_dna1)):
-        if list_dna1[i] != list_dna2[i]:
-            counter += 1
+def get_hamming_distance(dna1 , dna2): #Compares 2 DNA strings for non-matching characters
+    list_dna1 = list(dna1) #Covert dna1 into a list
+    list_dna2 = list(dna2) #Covert dna2 into a list
+    counter = 0 #counter at 0 as there are no non-matching characters before comparison
+    for i in range(len(list_dna1)): #allow the entry of a DNA string of any length
+        if list_dna1[i] != list_dna2[i]: #The code that recognizes non matching characters
+            counter += 1 #Counter increments each time a non-matching characters is identified
     return counter
 
-def reverse_string(string):
-    rstr1 = ""
-    indx = len(string)
-    while indx > 0:
+def reverse_string(string): #Code that reverse an inputted string
+    rstr1 = "" #string of any value
+    indx = len(string) #string of any length
+    while indx > 0: 
         rstr1 += string[ indx - 1 ]
         indx = indx - 1
     return rstr1
