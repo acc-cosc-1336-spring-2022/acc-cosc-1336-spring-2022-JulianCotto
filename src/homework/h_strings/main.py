@@ -28,8 +28,8 @@ def main():
 
 
 def decision_1():
-    ham1 = input("Please enter 1st DNA Sequence, 16 characters at a time")
-    ham2 = input("Please enter 2nd DNA Sequence, 16 characters at a time")
+    ham1 = input("Please enter 1st DNA Sequence")
+    ham2 = input("Please enter 2nd DNA Sequence")
     ham3 = get_hamming_distance(ham1 , ham2)
     print("The hamming distance between DNA1 & DNA 2 is", ham3)
     new_decision = str(input("Do you have another DNA sequence to compare? Y/N"))
@@ -43,7 +43,7 @@ def decision_1():
         
 
 def decision_2():
-    dna1 = input("Please enter DNA Sequence, 10 characters at a time")
+    dna1 = input("Please enter DNA Sequence")
     dna2 = get_dna_complement(dna1)
     print("The DNA Complement is", dna2)
     decision = str(input("Do you have another DNA sequence to add? Y/N"))
