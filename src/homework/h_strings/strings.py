@@ -25,13 +25,13 @@ def get_dna_complement(dna):
     reverse = reverse_string(dna)
     new_reverse = list(reverse)
     for i in range(len(new_reverse)):
-        if new_reverse[i] == "T" or new_reverse[i] == "t":
+        if new_reverse[i].lower() == "t":
             new_reverse[i] = "A"
-        elif new_reverse[i] == "A" or new_reverse[i] == "a":
+        elif new_reverse[i].lower() == "a":
             new_reverse[i] = "T"
-        elif new_reverse[i] == "G" or new_reverse[i] == "g":
+        elif new_reverse[i].lower() == "g":
             new_reverse[i] = "C"
-        elif new_reverse[i] == "C" or new_reverse[i] == "c":
+        elif new_reverse[i].lower() == "c":
             new_reverse[i] = "G"
             i += 1
 
