@@ -9,8 +9,8 @@ def reverse_string(string):
 
 def listToString(s):   
     str1 = ""
-    for ele in s: 
-        str1 += ele 
+    for letter in s: 
+        str1 += letter 
     return str1 
 
 def get_hamming_distance(dna1 , dna2):
