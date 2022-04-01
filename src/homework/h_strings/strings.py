@@ -15,28 +15,28 @@ def reverse_string(string): #Code that reverse an inputted string
         indx = indx - 1
     return rstr1
 
-def listToString(s):   
+def listToString(s):   #code that turns list back into string
     str1 = ""
     for letter in s: 
         str1 += letter 
     return str1 
 
-def get_dna_complement(dna):
-    reverse = reverse_string(dna)
-    new_reverse = list(reverse)
-    for i in range(len(new_reverse)):
-        if new_reverse[i].lower() == "t":
+def get_dna_complement(dna): #parameter dna
+    reverse = reverse_string(dna) #parameter dna passed through reverse_string function and assigbed to variable reverse
+    new_reverse = list(reverse) #reverse converted to list and assigned to variable new_reverse
+    for i in range(len(new_reverse)): #i=list position, for a list range of any size
+        if new_reverse[i].lower() == "t": #if position 0 is equal to T, change to A
             new_reverse[i] = "A"
-        elif new_reverse[i].lower() == "a":
-            new_reverse[i] = "T"
-        elif new_reverse[i].lower() == "g":
+        elif new_reverse[i].lower() == "a": #if position 0 is equal to A, change to T
+            new_reverse[i] = "T" 
+        elif new_reverse[i].lower() == "g": #if position 0 is equal to G, change to C
             new_reverse[i] = "C"
-        elif new_reverse[i].lower() == "c":
+        elif new_reverse[i].lower() == "c": #if position 0 is equal to C, change to G
             new_reverse[i] = "G"
-            i += 1
+            i += 1 #increment index and run for length of list
 
-    new_reverse1 = listToString(new_reverse)
-    return new_reverse1
+    new_reverse1 = listToString(new_reverse) #convert list back to string and assign to variable new_reverse1
+    return new_reverse1 #return the value of new_reverse1
     
     
 
