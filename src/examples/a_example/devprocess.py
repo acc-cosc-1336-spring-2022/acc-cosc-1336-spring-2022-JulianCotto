@@ -1,3 +1,8 @@
-def add_numbers(val1, val2):
-     '''Type the correct code to add two numbers after the return statement.'''
-     return val1 + val2
+def my_func():
+    var = 20  # inner variable
+    return var
+
+var =​= 10  # outer variable
+print(var)
+print(my_func())
+print(var)

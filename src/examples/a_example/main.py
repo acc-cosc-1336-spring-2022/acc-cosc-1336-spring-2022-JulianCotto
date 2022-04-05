@@ -1,5 +1,8 @@
-import devprocess
+num = 20  # outer variable
 
-result = devprocess.add_numbers(5, 5)
+def use_local_variable(num):
+    num = 10  # inner variable
+    print(num)
 
-print(result)
+print(use_local_variable(num))
+print(num)
